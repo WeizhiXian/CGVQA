@@ -1,0 +1,100 @@
+clc
+clear
+%{
+The corresponding newly established database is available at 
+https://pan.baidu.com/s/1_P2ZNrLzJwZfG6xa6tKnDQ
+password:CGVQ
+%}
+Names={'AOV5_1920_1080_60_gauss_0.003.avi'
+    'BigBuckBunny1_1280_720_24_gauss_0.003.avi'
+    'BigBuckBunny2_1280_720_24_gauss_0.003.avi'
+    'BigBuckBunny3_1280_720_24_gauss_0.003.avi'
+    'BigBuckBunny4_1280_720_24_gauss_0.003.avi'
+    'CosmosLaundromat1_4096_2160_24_gauss_0.003.avi'
+    'CosmosLaundromat2_4096_2160_24_gauss_0.003.avi'
+    'CosmosLaundromat3_4096_2160_24_gauss_0.003.avi'
+    'CosmosLaundromat4_4096_2160_24_gauss_0.003.avi'
+    'DOTA21_1920_1080_60_gauss_0.003.avi'
+    'DOTA22_1920_1080_60_gauss_0.003.avi'
+    'DOTA23_1920_1080_60_gauss_0.003.avi'
+    'ElephantsDream1_1280_720_24_gauss_0.003.avi'
+    'ElephantsDream2_1280_720_24_gauss_0.003.avi'
+    'ElephantsDream3_1280_720_24_gauss_0.003.avi'
+    'Factory1_1920_1080_30_gauss_0.003.avi'
+    'Factory2_1920_1080_30_gauss_0.003.avi'
+    'Fallout41_1920_1080_60_gauss_0.003.avi'
+    'Fallout42_1920_1080_60_gauss_0.003.avi'
+    'GTAV1_1920_1080_60_gauss_0.003.avi'
+    'GTAV2_1920_1080_60_gauss_0.003.avi'
+    'JianLing_1920x1080_60_gauss_0.003.avi'
+    'Life1_1920_1080_30_gauss_0.003.avi'
+    'Life2_1920_1080_30_gauss_0.003.avi'
+    'SolLevante1_3840_2160_24_gauss_0.003.avi'
+    'SolLevante2_3840_2160_24_gauss_0.003.avi'
+    'SolLevante3_3840_2160_24_gauss_0.003.avi'};
+FrameRates=[60
+    24
+    24
+    24
+    24
+    24
+    24
+    24
+    24
+    60
+    60
+    60
+    24
+    24
+    24
+    30
+    30
+    60
+    60
+    60
+    60
+    60
+    30
+    30
+    24
+    24
+    24];
+MbSize = [40
+    40
+    40
+    40
+    40
+    16
+    16
+    16
+    16
+    40
+    40
+    40
+    40
+    40
+    40
+    40
+    40
+    40
+    40
+    40
+    40
+    40
+    40
+    40
+    40
+    40
+    40];
+for i = 1:length(FrameRates)
+    videoName =Names{i};
+    Fps = FrameRates(i);
+    Result = mainfun(videoName,Fps,MbSize(i));
+    fid=fopen('Result.txt','a');
+    fprintf(fid,[videoName,'	' ]);
+    for k=1:length(Result)
+        fprintf(fid,'%.5f	',Result(k));
+    end
+    fprintf(fid,'\n');
+    fclose(fid);
+end

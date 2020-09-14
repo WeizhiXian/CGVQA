@@ -1,0 +1,9 @@
+function [gamparam,sigma] = estimateGGDparam(vec)
+gam = 0.2:0.001:10;%给定候选的形状参数γ
+r_gam = (gamma(1./gam).*gamma(3./gam))./((gamma(2./gam)).^2);%根据式(4)计算比值
+sigma_sq = mean((vec).^2);%σ^2的零均值估计，非零均值需要计算均值然后按照(3)式
+sigma = sqrt(sigma_sq);
+E = mean(abs(vec));%计算步骤2
+rho  = sigma_sq/E^2;%计算步骤3的比值
+[min_difference, array_position] = min(abs(rho - r_gam));
+gamparam = gam(array_position);
