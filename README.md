@@ -6,7 +6,7 @@ In this study, we first develop a useful CG animation subjective video quality d
 |----------------------------------------|-------------------------------------------------------------------------|
 | Number of Reference / Distorted Videos | 27 /397                                                                 |
 | Sources                                | animated films, games                                                   |
-| Resolution                             | 1270x720 (720p) <br> 1920x1080 (1080p) 3840x2160 (4K UHD) 4096x2160 (DCI 4K) |
+| Resolution                             | - 1270x720 (720p) <br> - 1920x1080 (1080p) <br> - 3840x2160 (4K UHD) <br> - 4096x2160 (DCI 4K) |
 
 The corresponding newly established database is available at 
 https://pan.baidu.com/s/1_P2ZNrLzJwZfG6xa6tKnDQ
