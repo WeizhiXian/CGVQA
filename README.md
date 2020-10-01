@@ -6,8 +6,9 @@ In this study, we first develop a useful CG animation subjective video quality d
 |----------------------------------------|-------------------------------------------------------------------------|
 | Number of Reference / Distorted Videos | 27 /397                                                                 |
 | Sources                                | animated films, games                                                   |
-| Resolution                             | * 1270x720 (720p) <br>* 1920x1080 (1080p) <br>* 3840x2160 (4K UHD) <br>* 4096x2160 (DCI 4K) |
+| Resolution                             | ● 1270x720 (720p) <br>* 1920x1080 (1080p) <br>* 3840x2160 (4K UHD) <br>* 4096x2160 (DCI 4K) |
 | Distortion Types|* AVC/H.264 compression: qp=22, 32, 42, 50 <br>* HEVC/H.265 compression: qp=32, 42, 47, 50 <br>* MPEG-2 compression: q=14, 31<br>* intraframe-only compression byMJPEG codec<br>* wavelet-based compression by Snow codec<br>* additive white noise: $\sigma$=0.003, 0.005, 0.01| 
+| Frame Rate | 24fps, 30fps, 60fps |
 
 The corresponding newly established database is available at 
 https://pan.baidu.com/s/1_P2ZNrLzJwZfG6xa6tKnDQ
