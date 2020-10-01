@@ -2,7 +2,7 @@
 
 ## Dataset Introduction and Download
 In this study, we first develop a useful CG animation subjective video quality database for the validation of corresponding VQA algorithms. It consists of 27 reference videos and 397 distorted videos. The distortion types include five compression-based distortion types and one transmission-based distortion type. All the videos in are High Definition (HD) content and above. More details of the database are shown as follows:
-
+|||
 |----------------------------------------|-------------------------------------------------------------------------|
 | Number of Reference / Distorted Videos | 27 /397                                                                 |
 | Sources                                | animated films, games                                                   |
