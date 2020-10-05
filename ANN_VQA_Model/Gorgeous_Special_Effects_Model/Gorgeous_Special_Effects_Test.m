@@ -1,0 +1,11 @@
+Gorgeous_Special_Effects_Test_Video_Data
+net=load('-mat','Gorgeous_Special_Effects'); 
+input=load('-mat','Gorgeous_Special_Effects_input'); 
+output=load('-mat','Gorgeous_Special_Effects_output'); 
+view(net.net);
+inputtest=mapminmax('apply',Feature,input.inputps);
+outputtest=sim(net.net,inputtest);
+MOS_pre=mapminmax('reverse',outputtest,output.outputps);
+plot(MOS,MOS_pre,'o')
+Pearson=corr(MOS',MOS_pre','type','Pearson')
+Spearman=corr(MOS',MOS_pre','type','Spearman')

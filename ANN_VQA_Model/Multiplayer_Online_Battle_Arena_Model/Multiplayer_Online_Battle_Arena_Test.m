@@ -1,0 +1,11 @@
+Multiplayer_Online_Battle_Arena_Test_Video_Data
+net=load('-mat','Multiplayer_Online_Battle_Arena'); 
+input=load('-mat','Multiplayer_Online_Battle_Arena_input'); 
+output=load('-mat','Multiplayer_Online_Battle_Arena_output'); 
+view(net.net);
+inputtest=mapminmax('apply',Feature,input.inputps);
+outputtest=sim(net.net,inputtest);
+MOS_pre=mapminmax('reverse',outputtest,output.outputps);
+plot(MOS,MOS_pre,'o')
+Pearson=corr(MOS',MOS_pre','type','Pearson')
+Spearman=corr(MOS',MOS_pre','type','Spearman')
