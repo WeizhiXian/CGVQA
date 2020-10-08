@@ -1,8 +1,10 @@
 # CGVQA
 
 ## Experiment Configurations
-Python 3.6.10 
+Python 3.6.10
+
 Tenorflow-gpu 1.2.0
+
 Matlab R2020a
 
 ## Introduction and Download Link of the Database
