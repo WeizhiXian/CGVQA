@@ -1,0 +1,6 @@
+model_checkpoint_path: "F:/MM/fully_ckpt/fully-960"
+all_model_checkpoint_paths: "F:/MM/fully_ckpt/fully-928"
+all_model_checkpoint_paths: "F:/MM/fully_ckpt/fully-936"
+all_model_checkpoint_paths: "F:/MM/fully_ckpt/fully-944"
+all_model_checkpoint_paths: "F:/MM/fully_ckpt/fully-952"
+all_model_checkpoint_paths: "F:/MM/fully_ckpt/fully-960"
