@@ -25,7 +25,7 @@ In this study, we first develop a useful CG animation subjective video quality d
 
 The corresponding newly established database is available at 
 **https://pan.baidu.com/s/1RJ3uyprMrqTrI2CNDstU6A?pwd=CGVQ**
-(password:**cgvq**)
+(password:**CGVQ**)
 
 ## General Flowchart
 ![General Flowchart](https://github.com/WeizhiXian/CGVQA/blob/main/General%20Flowchart.png)
