@@ -24,7 +24,7 @@ In this study, we first develop a useful CG animation subjective video quality d
 |Number / Age / Famale Percentage of observers|25 / 22～35 / 44%|
 
 The corresponding newly established database is available at 
-**https://pan.baidu.com/s/1_P2ZNrLzJwZfG6xa6tKnDQ**
+**https://pan.baidu.com/s/1RJ3uyprMrqTrI2CNDstU6A?pwd=CGVQ**
 (password:**cgvq**)
 
 ## General Flowchart
